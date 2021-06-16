@@ -1,38 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Open+Sans&display=swap');
+
 .App {
   text-align: center;
+  font-family: "Open Sans";
+  height: 100vh;
+  max-height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  position: -webkit-sticky;
+  min-height: 100%;
+  background-image: url("./backdrop.jpg");
+  background-size: contain;
+  background-size: auto 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-body {
+  width: 50em;
+  align-self: center;
+  margin: 0 auto 2em auto;
+  padding: 5px 1em;
+  border: solid;
+  border-width: 0px 2px 2px 2px;
+  border-radius: 0px 0px 10px 10px;
+  border-color: #786e72;
+  background-color: rgba(220,147,111, 0.5);
+  background-blend-mode: overlay;
 }

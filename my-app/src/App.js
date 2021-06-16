@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+
 import './App.css';
+import NavBar from './components/NavBar';
+import DefaultPage from './components/DefaultPage';
+import DeckBuilder from './components/DeckBuilder';
+import ContextInformation from './components/ContextInformation';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [ deck, setDeck ] = useState([]);
+
+    return (
+        <div className="App">
+            <ContextInformation.Provider value={{deck: deck, setDeck: setDeck}}>
+                <Router>
+                    <NavBar />
+                    <div className="background">
+                        <div className="main-body">
+                            <Route path="/" exact component={DefaultPage} />
+                            <Route path="/deck-builder" component={DeckBuilder} />
+                            {/* <Route path="/load-deck" exact componet={DeckLoader} />
+                            <Route path="/sign-in" exact component={SignIn} /> */}
+                        </div>
+                    </div>
+                </Router>
+            </ContextInformation.Provider>  
+        </div>
+    );
 }
 
 export default App;
