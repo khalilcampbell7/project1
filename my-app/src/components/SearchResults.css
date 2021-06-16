@@ -26,6 +26,7 @@
     border-width: 1px;
     border-color: #321307;
     padding: 2px;
+    cursor: pointer;
 }
 
 .return-to-deck:hover {

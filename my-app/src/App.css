@@ -7,18 +7,6 @@
   max-height: auto;
 }
 
-.background {
-  position: -webkit-sticky;
-  min-height: 100%;
-  background-image: url("./backdrop.jpg");
-  background-size: contain;
-  background-size: auto 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: black;
-}
-
 .main-body {
   width: 50em;
   align-self: center;
@@ -29,5 +17,4 @@
   border-radius: 0px 0px 10px 10px;
   border-color: #786e72;
   background-color: rgba(220,147,111, 0.5);
-  background-blend-mode: overlay;
 }

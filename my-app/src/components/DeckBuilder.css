@@ -1,0 +1,19 @@
+.search-help {
+    color: #67a4ac;
+    font-weight: bolder;
+    font-size: small;
+    width: fit-content;
+    border: solid;
+    background-color: #873c1f;
+    border-width: 1px;
+    border-color: #321307;
+    padding: 0px 5px;
+    margin: 0px 1em;
+}
+
+.search-help:hover {
+    color: #67a4ac;
+    font-style: oblique;
+    border-color: #825126;
+    background-color: #321307;
+}

@@ -32,6 +32,7 @@ function SearchResult(props) {
         history.push("/deck-builder")
     }
 
+
     return(
         <div className="search-results">
             <div className="return-to-deck" onClick={returnToDeck}>🡸 Return to Deck</div>
