@@ -18,3 +18,10 @@
   border-color: #786e72;
   background-color: rgba(220,147,111, 0.5);
 }
+
+button, input {
+  background-color: lightgray;
+  border-radius: 5px;
+  margin: 0px 1px;
+}
+
