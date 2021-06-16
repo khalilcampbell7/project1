@@ -34,7 +34,7 @@ Please see the following diagram for general site navigation.
 
 ### Making a New Deck
 
-
+Click on the new deck button either in the nav bar or in the default page.
 
 ### Searching for Cards
 
