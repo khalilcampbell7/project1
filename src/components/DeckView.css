@@ -1,0 +1,45 @@
+.deck-view{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(220,147,111, 1.0);
+    border: solid;
+    border-color: darkgrey; 
+    border-width: 1px;
+    width: 32.5%;
+    max-width: 32.5%;
+    margin: 2px 0px;
+    justify-content: space-between;
+}
+
+.card-name{
+    flex-grow: 100;
+    text-align: left;
+    font-weight: bold;
+    /* font-size: smaller; */
+}
+
+.card-name:hover {
+    background-color: rgb(180, 117, 85);
+    cursor: pointer;
+}
+
+.card-count{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.modification-buttons{
+    text-align: right;
+    flex-grow: 1;
+}
+
+.modification-buttons button:hover {
+    cursor: pointer;
+}
