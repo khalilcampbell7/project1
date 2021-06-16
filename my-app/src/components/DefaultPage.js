@@ -11,7 +11,7 @@ function DefaultPage() {
     return(
         <div className="default-page">
             <button onClick={e => navigate(e, '/deck-builder')}>Create New Deck</button>
-            <button onClick={e => navigate(e, '/deck-builder')}>Load Saved Deck</button>
+            <button onClick={e => navigate(e, '/load-deck')}>Load Saved Deck</button>
         </div>
     )
 }

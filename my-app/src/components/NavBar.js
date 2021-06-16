@@ -21,7 +21,7 @@ function NavBar() {
                 <div className="left-align">
                     <div onClick={newDeck} className="nav-link">New Deck</div>
                     <div onClick={() => history.push("/deck-builder")} className="nav-link">View Deck</div>
-                    {/* <p className="nav-link">Load Deck</p> */}
+                    <div onClick={() => history.push("/load-deck")} className="nav-link">Load Deck</div>
                 </div>
                 {/* The following could be a component  */}
                 {/* <div className="right-align">
