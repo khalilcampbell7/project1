@@ -7,18 +7,23 @@ You can either access the application [here](https://knd-decks.herokuapp.com/dec
 ### Cloning Repository
 
 The first step in using the application is to clone the repository with the following command:
+
 `git clone https://github.com/khalilcampbell7/project1.git`
 
 ### Initializing Application
 
 Navigate to the react directory:
+
 `cd project1/my-app`
+
 In order for the application to run, you must install all required packages:
+
 `npm install`
 
 ### Launching the Application
 
 Once the packages are installed, simply launch the application:
+
 `npm start`
 
 ## Navigating K&D Decks
@@ -47,8 +52,11 @@ is:legality (is:standard => is card legal in format)
 #### Search Example
 
 If I wanted to look for all Elf type cards that are currently standard that can go in a green deck, I would type the following:
+
 `t:elf is:standard c:g`
+
 To get the following results:
+
 ![Search Example](search_example.png)
 
 
