@@ -44,6 +44,14 @@ r:rarity (r:common => common, uncommon, rare, mythic)
 is:legality (is:standard => is card legal in format)
 ```
 
+#### Search Example
+
+If I wanted to look for all Elf type cards that are currently standard that can go in a green deck, I would type the following:
+`t:elf is:standard c:g`
+To get the following results:
+![Search Example](search_example.png)
+
+
 ### Adding Cards to Deck
 
 After submitting your search, a list of cards will populate, assuming the search yields results.  Simply press the + button on the resultant card.  In the deck view you can press - and + to remove and add copies of the card respectively.
