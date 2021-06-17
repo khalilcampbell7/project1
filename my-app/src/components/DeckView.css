@@ -2,16 +2,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 1em 0px;
+    padding: 0px;
     flex-wrap: wrap;
 }
 
 .card-box{
     display: flex;
     flex-direction: row;
-    background-color: rgba(220,147,111, 1.0);
+    background-color: rgba(220,147,111, 0.75);
     border: solid;
-    border-color: darkgrey; 
-    border-width: 1px;
+    padding: 0px 1px;
+    border-width: 2px;
     width: 32.5%;
     max-width: 32.5%;
     margin: 2px 0px;
