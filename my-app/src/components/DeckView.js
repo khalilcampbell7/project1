@@ -33,7 +33,47 @@ function DeckView() {
     }
 
     const renderCard = (card, index, deck) => {
-        return (<div className="card-box">
+        const colors = card.colors;
+
+        const cssColors = colors.map(color => {
+            color = color.toUpperCase();
+            switch(color) {
+                case "W":
+                    return "white";
+                case "B":
+                    return "black";
+                case "R":
+                    return "red";
+                case "U":
+                    return "blue";
+                case "G":
+                    return "green";
+                default:
+                    return "purple";
+            }
+        })
+
+        if(cssColors.length === 0) {
+            cssColors.push("grey");
+        }
+        let cssComponent = {};
+
+        if(cssColors.length === 1)
+        {  
+            cssComponent = {
+                borderColor: cssColors[0]
+            };
+        } else {
+            const colorString = cssColors.reduce((acc, color) => `${acc}, ${color}`);
+            cssComponent = {
+                borderImage: `linear-gradient(to right, ${colorString}) 1`
+            };
+        }
+        
+
+        // border-image: linear-gradient(to right, white, black, green)
+
+        return (<div className="card-box" style={cssComponent}>
                     <div className="card-name" onClick={e=> loadCardPage (e, card)}>
                         {card.name}
                     </div> 
@@ -55,6 +95,7 @@ function DeckView() {
         element.download = "deck_export.json";
         document.body.appendChild(element);
         element.click();
+        document.body.removeChild(element);
     }
 
     return (

@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { useHistory } from 'react-router-dom';
-import SearchResults from './SearchResults.css'
+import './SearchResults.css'
 
 import ContextInformation from "./ContextInformation";
 
